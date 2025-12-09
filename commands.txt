@@ -1,0 +1,6 @@
+# Docker Desktop
+# Minikube - local k8s
+# Helm - kubernetes package manager
+
+username - admin
+password - wQq5bQwWc5dM8GCiUL89zRsdX28K75DbFljwrWzd

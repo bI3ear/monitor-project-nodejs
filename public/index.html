@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitor Project Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Monitor Project</div>
+      <div class="status" id="service-status">Checking status...</div>
+    </header>
+
+    <main class="layout">
+      <section class="card">
+        <h2>Overview</h2>
+        <div class="overview-grid">
+          <div class="metric-item">
+            <div class="metric-label">Last Updated</div>
+            <div class="metric-value" id="last-updated">-</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-label">Scrape Result</div>
+            <div class="metric-value" id="scrape-result">-</div>
+          </div>
+        </div>
+        <button id="refresh-btn">Refresh Now</button>
+      </section>
+
+      <section class="card">
+        <h2>Prometheus Metrics</h2>
+        <p class="hint">Raw metrics exposed at <code>/metrics</code>.</p>
+        <pre id="metrics-raw" class="metrics-raw"></pre>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Powered by Node.js, Express &amp; prom-client</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
